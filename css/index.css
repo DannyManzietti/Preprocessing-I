@@ -1,1 +1,299 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+h2 {
+  margin-bottom: 18px;
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p,
+a,
+ul,
+li,
+table {
+  font-size: 1rem;
+}
+p {
+  margin: 10px auto;
+}
+ul {
+  list-style: circle;
+  list-style-position: inside;
+}
+ul li {
+  margin: 5px auto;
+}
+img {
+  width: 100%;
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #F0FFFF;
+  margin: 0 auto;
+}
+.container .head {
+  color: #F0FFFF;
+  background-color: #FAF0E6;
+}
+.container .head-nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.container .head-nav a,
+.container .head-nav a:link {
+  text-decoration: none;
+  padding: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #FAF0E6;
+  color: black;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  justify-content: center;
+}
+.container .head-nav a:hover,
+.container .head-nav a:link:hover {
+  color: #778899;
+}
+@media only screen and (max-width: 500px) {
+  .container .head-nav {
+    flex-direction: column;
+  }
+  .container .head-nav a {
+    width: 100%;
+    margin: 5px 0px;
+    text-align: center;
+  }
+}
+.container .content {
+  padding: 10px;
+}
+.container .content .content-section {
+  margin: 25px auto;
+}
+.container .section-overview {
+  display: flex;
+}
+.container .section-overview .overview-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .section-overview .overview-img .photo {
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.container .section-overview .overview-img .overview-nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 150px;
+}
+.container .section-overview .overview-text {
+  padding: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .container .section-overview {
+    flex-direction: column;
+  }
+  .container .section-overview .overview-text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .section-skills ul {
+    list-style: none;
+  }
+}
+.section-work table {
+  width: 100%;
+}
+.section-work table tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+.section-work table tr:hover {
+  border: 2px dashed;
+}
+.section-work table tr:first-child:hover {
+  border: inherit;
+}
+.section-work table th {
+  border-bottom: 1px solid;
+  padding: 12px;
+}
+@media only screen and (max-width: 500px) {
+  .section-work table th:first-child {
+    display: none;
+  }
+  .section-work table th:last-child {
+    display: none;
+  }
+  .section-work table th {
+    text-align: left;
+  }
+}
+.section-contact address p {
+  margin-top: 10px;
+}
+.footer {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #778899;
+  color: #F0FFFF;
+}
+.contact-form .form {
+  margin: 0px auto;
+  /*centered */
+  max-width: 600px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 1.5rem;
+}
+.contact-form label {
+  padding-left: 0px;
+}
